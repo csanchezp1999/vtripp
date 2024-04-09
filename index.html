@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VtriP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="img/avion.jpg" type="image/x-icon">
+    <!-- iconos restaurante -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <body>
+        <!-- Sin este text center se va todo a otro lado -->
+    <header class="Navbar-all text-center " >
+        <!-- bg-body-tertiary define el color de fondo -->
+        <nav class="navbar navbar-expand-lg d-inline-block">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#index.html"><span>V</span>trip<span>T</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#Inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#propuesta">Propuesta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#mejores-viajes">Recomendaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true" href="#footer">Contacto</a>
+                  </li>
+                </ul>
+           
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <!-- Para centrar contenido en mitd de pantall -->
+        <section class="hero container-fluid d-flex align-items-center justify-content-center "id="Inicio">  
+            <div class="">
+                <h2>Viaja a <span class="cambiarcontenido"></span>
+                </h2>
+                <p>Tus sueños en un solo click</p>
+                <div>
+                <button class="btn">
+                    Buscar destinos
+                </button>
+                </div>
+            </div>
+
+        </section>
+        <!-- FORM -->
+        <section class="form-section" >
+            <!-- Cuidado con el margen que genera la clase row -->
+            <div class="title">
+                <h3>¡Cuentanos acerca de su viaje!</h3>
+            </div>
+            
+           <div class="row fixclass">
+                <div class="col-md-6 col-sm-12 half-section">
+                   <img src="img/formimg.jpg" alt="">
+
+                </div>
+
+                <div class="col-md-6 col-sm-12 half-section" id="propuesta">
+                    <form action="">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre de contacto">
+                          </div>
+                          <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo electrónico">
+                          </div>
+                          <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Fecha de ida">
+                          </div>
+                          <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Fecha de vuelta ">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Información adicional</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="¡Cuentanos sus preferencias!"></textarea>
+                          </div>
+                          <div class="divbutton">
+                            <button>Enviar</button>
+                          </div>
+                    </form>
+                </div>
+           </div>
+        </section>
+
+        <!-- Seccion de recomendaciones -->
+        <section class="recomendaciones" id="mejores-viajes">
+            <div class="recomendaciones-title">
+                <h3>Nuestras mejores opciones</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 py-3 py-md-0  col-sm-12">
+                      <!-- Propiedad imp la de h-100 para tener altura constante -->
+                        <div class="card h-100" style="width: 18rem;">
+                            <img src="img/cancun.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Cancún</h5>
+                              <p class="card-text">Cancún, ubicado en la costa noreste de la península de Yucatán, es un destino turístico de renombre mundial conocido por sus playas de arena blanca y aguas turquesas, así como por su vibrante vida nocturna y su rica oferta cultural.</p>
+                                
+                            </div>
+                            <div class="list">
+                              <li class="list-group-item">300$ por noche</li>
+                              <li class="list-group-item">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </li>
+                              
+                            </div>
+                            <div class="card-body final">
+                              <a href="#" class="card-link">Mas Información</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-lg-4 py-3 py-md-0  col-sm-12">
+                      <div class="card h-100" style="width: 18rem;">
+                          <img src="img/grecia.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Grecia</h5>
+                            <p class="card-text">Grecia, cuna de la civilización occidental, es un país con una rica historia y una belleza natural impresionante. Con sus icónicas ruinas antiguas, hermosas islas y una cultura vibrante, es un destino que cautiva a los viajeros con su encanto único</p>
+                              
+                          </div>
+                          <div class="list">
+                            <li class="list-group-item">327$ por noche</li>
+                            <li class="list-group-item">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star"></i>
+                          </li>
+                            
+                          </div>
+                          <div class="card-body final">
+                            <a href="#" class="card-link">Mas Información</a>
+                          </div>
+                        </div>
+                  </div>
+
+                  <div class="col-lg-4 py-3 py-md-0  col-sm-12">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="img/cancun.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Barcelona</h5>
+                          <p class="card-text">Barcelona, la ciudad cosmopolita y cultural de España, cautiva con su arquitectura única, playas mediterráneas y una vibrante vida nocturna. Con sus emblemáticos monumentos, como la Sagrada Familia y el Parque Güell, es un destino lleno de encanto.</p>
+                            
+                        </div>
+                        <div class="list">
+                          <li class="list-group-item money">263$ por noche</li>
+                          <li class="list-group-item">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                          
+                        </div>
+                        <div class="card-body final">
+                          <a href="#" class="card-link">Mas Información</a>
+                        </div>
+                      </div>
+                </div>
+                </div>
+
+                <div class="espacio"></div>
+                
+                <div class="row">
+                  <div class="col-lg-4 py-3 py-md-0  col-sm-12">
+                    <!-- Propiedad imp la de h-100 para tener altura constante -->
+                      <div class="card h-100" style="width: 18rem;">
+                          <img src="img/cuba.webp" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Cuba</h5>
+                            <p class="card-text"> Cuba, un destino turístico icónico del Caribe, enamora con su rica historia, vibrante cultura y hermosos paisajes tropicales. Desde las coloridas calles de La Habana Vieja hasta las playas de Varadero y los valles verdes de Viñales, Cuba ofrece una experiencia única.</p>
+                              
+                          </div>
+                          <div class="list">
+                            <li class="list-group-item">210$ por noche</li>
+                            <li class="list-group-item">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                          </li>
+                            
+                          </div>
+                          <div class="card-body final">
+                            <a href="#" class="card-link">Mas Información</a>
+                          </div>
+                        </div>
+                  </div>
+
+                  <div class="col-lg-4 py-3 py-md-0  col-sm-12">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="img/ita2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Italia</h5>
+                          <p class="card-text">Italia, famosa por su impresionante patrimonio artístico, su exquisita gastronomía y su encantador estilo de vida mediterráneo, ofrece una mezcla única de historia, cultura y belleza natural. Desde las majestuosas ruinas de Roma hasta las románticas calles de Venecia.</p>
+                            
+                        </div>
+                        <div class="list">
+                          <li class="list-group-item">527$ por noche</li>
+                          <li class="list-group-item">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </li>
+                          
+                        </div>
+                        <div class="card-body final">
+                          <a href="#" class="card-link">Mas Información</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-4 py-3 py-md-0  col-sm-12">
+                  <div class="card h-100" style="width: 18rem;">
+                      <img src="img/elcaribe.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">El Caribe</h5>
+                        <p class="card-text">El Caribe, un vasto archipiélago de islas tropicales bordeadas por aguas turquesas, fascina con su diversidad natural y cultural. Desde las exuberantes selvas tropicales hasta las playas de arena blanca y las ciudades llenas de color, cada rincón del Caribe ofrece una experiencia única.</p>
+                          
+                      </div>
+                      <div class="list">
+                        <li class="list-group-item money">263$ por noche</li>
+                        <li class="list-group-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </li>
+                        
+                      </div>
+                      <div class="card-body final">
+                        <a href="#" class="card-link">Mas Información</a>
+                      </div>
+                    </div>
+              </div>
+              </div>
+
+            </div>
+
+
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section class="servicios">
+            <div class="servicios-title">
+              <h5><span>N</span>uestras ventajas </h5>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-3 py-3 py-md-0 col-sm-12">
+                    <div class="card h-100 service">
+                      <div class="icon-restaurant">
+                        <span class="material-symbols-outlined">
+                        restaurant
+                        </span>
+                        <h5 class="card-title">Restaurante</h5>
+                      </div>
+                      <div class="card-body">
+                        
+                        <p class="card-text">Disfrute con nuestra mejor selección de restaurantes, ya sea de comida local, mixs o incluso comida rápida.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 py-3 py-md-0 col-sm-12">
+                    <div class="card h-100 service">
+                      <div class="icon-restaurant">
+                        <span class="material-symbols-outlined">
+                          flight
+                          </span>
+                        <h5 class="card-title">Viaje</h5>
+                      </div>
+                      <div class="card-body">
+                        
+                        <p class="card-text">Viaje tranquilo y agusto en nuestras aerolineas JMSL, lo último en velocidad y seguridad.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 py-3 py-md-0 col-sm-12">
+                    <div class="card h-100 service">
+                      <div class="icon-restaurant">
+                        <span class="material-symbols-outlined">
+                          luggage
+                          </span>
+                        <h5 class="card-title">Equipaje</h5>
+                      </div>
+                      <div class="card-body">
+                        
+                        <p class="card-text">No se preocupe por su equipaje, con nuestro complejo sistema de trazabilidad es imposible perderlo.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 py-3 py-md-0 col-sm-12">
+                    <div class="card h-100 service">
+                      <div class="icon-restaurant">
+                        <span class="material-symbols-outlined">
+                          rowing
+                          </span>
+                        <h5 class="card-title">Actividades</h5>
+                      </div>
+                      <div class="card-body">
+                        
+                        <p class="card-text">A su alcance está de manera gratuita nuestro planning de actividades adaptado para cada necesidad.</p>
+                      </div>
+                    </div>
+                  </div>   
+               </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+          <div class="footer">
+          <a class="navbar-brand" href="#index.html"><span>V</span>trip<span>T</span></a>
+          <p>Tus sueños, en un click.</p>
+            <div class="social-link">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+
+            </div>
+          </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
